@@ -24,12 +24,12 @@ while jugador1 == "si" and jugador2 == "si":
     suma2 += dado2
     print(f"jugador 1 su dado es: {dado1} . sus puntos son: {suma1}. "
           f"jugador 2 su dado es: {dado2}, sus puntos son:{suma2}")
-    jugador1 = (input("jugador1:¿desea volver a tirar los dados?: "))
-    jugador2 = (input("jugador2:¿desea volver a tirar los dados?: "))
-
     if (suma1 > 20) or (suma2 > 20):
         jugador1 = "no"
         jugador2 = "no"
+    elif (suma1 <= 20) or (suma2 <= 20):
+        jugador1 = (input("jugador1:¿desea volver a tirar los dados?: "))
+        jugador2 = (input("jugador2:¿desea volver a tirar los dados?: "))
 
 else:
     jugador1 = suma1
